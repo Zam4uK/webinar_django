@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {{blog.name}}
+
+    {{blog.text}}
+    <a href="{% url "blog-edit" blog.slug %}">Изменить блог</a>
+{% endblock %}

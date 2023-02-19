@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% for blog in blog_list %}
+        <a href="{{blog.get_absolute_url}}">{{blog.name}}</a>
+    {% endfor %}
+
+{% endblock %}
